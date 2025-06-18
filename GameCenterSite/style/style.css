@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+    color: hsl(225, 10%, 90%);
+    min-height: 100vh;
+}
+
+/* animacia rom gachndes; .main-content-shi gamoikeneba */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    80% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* shemdegi aris navigaciistvis, romelic dinamiurad javascriptidan itvirteba, gastilvistvis */
+#nav {
+    background: rgba(30, 30, 80, 0.9);
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+#nav a:hover {
+    color: #fbb034;
+}
+
+.flex {
+    display: flex;
+    gap: 32px;
+}
+
+/* wallpaper.html iwkeba */
+#wallpapers-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wallpaper-item {
+    margin: 16px;
+    text-align: center;
+}
+
+.wallpaper-item img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* fix1 da fix2 aris gilakebis nawilshi qvemot, rom gaasworos wallpapers.html-shi */
+/* wallpaper dasrulda */
+
+/* index.html dawkeba */
+.highlight {
+    color: #ffdd00;
+}
+
+/* es dziritadad kvelas exeba pages-s exeba */
+.main-content {
+    max-width: 900px;
+    margin: 32px auto;
+    background: rgba(40, 40, 60, 0.85);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.30);
+    animation: fadeIn 1s;
+}
+
+.main-image {
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 9px;
+    box-shadow: 0 3px 16px rgba(18, 30, 60, 0.22);
+}
+
+.tip-section {
+    margin-top: 32px;
+}
+
+#tip {
+    margin-top: 16px;
+    font-style: italic;
+}
+/* index.html dasruleba */
+
+h1 {
+    color: #fbb034;
+    text-shadow: 2px 2px 8px hsl(37, 98%, 42%, 0.4);
+}
+
+h2 {
+    margin-top: 32px;
+}
+
+/* gilakebistvis */
+.gradient-btn {
+    background: linear-gradient(90deg, #fbb034 0%, #ffdd00 100%);
+    color: #222;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px #e3e181;
+    transition: all 0.3s;
+    position: relative;
+    top: 12px;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05) rotate(-2deg);
+    background: linear-gradient(90deg, #ffdd00 0%, #00ff1a 100%);
+}
+
+/* gilakebis gasworeba wallpapers.html-shi (fix1, fix2) */
+.fix1 {
+    position: relative;
+    top: -120px;
+}
+
+.fix2 {
+    position: relative;
+    top: -50px;
+}
+
+/* contact.php iwkeba */
+.contact-fix {
+    position: relative;
+    margin-left: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(60, 60, 80, 0.85);
+    padding: 29px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#msg {
+    margin-top: 16px;
+}
+/* contact.php dasrulda */
+
+/* saertod php damushavebistvis */
+input, textarea {
+    padding: 0.711px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #25244e;
+    color: #fafafa;
+    box-shadow: 0 1px 4px #1112;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #fbb034;
+}
+
+/* trending.html iwkeba */
+.game-card {
+    margin: 32px 0;
+    padding: 24px;
+    border-radius: 12px;
+    background: #232345;
+    box-shadow: 0 2px 6px rgba(27, 80, 200, 0.1);
+}
+
+.game-card img {
+    float: left;
+    margin-right: 24px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+.button-fix{
+    margin-left: 142px;
+}
+
+.clear {
+    clear: both;
+}
+/* trending.html dasruleba */
+
+/* footer-istvis, romelic kvelganaa */
+.site-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    padding: 10px 0;
+    background-color: #25244e;
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* sxva ekranis zomebze rom imushaos saitma */
+@media only screen and (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .game-card {
+        max-width: 100%;
+    }
+
+    body {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .site-footer {
+        margin-top: auto;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    .main-content {
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .wallpaper-item img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .main-image {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .tip-section {
+        margin-top: 24px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .game-card {
+        flex-direction: column;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .game-card img {
+        float: none;
+        margin: 0 auto 16px auto;
+        display: block;
+    }
+
+    .fix1, .fix2, .contact-fix {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .gradient-btn {
+        width: 100%;
+        top: 0;
+    }
+
+    .contact-fix {
+        margin-top: 16px;
+    }
+}
