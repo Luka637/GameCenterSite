@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($uName === $username && password_verify($password, $hashedPassword)) {
                 // radgan tu sworad sheva informacia, sesia gaketdeba da gaagrdzelebs chveulebriv
                 $_SESSION['username'] = $username;
+                setcookie("remember_user", $username, time() + (7 * 24 * 60 * 60), "/");
                 header("Location: contact.php");  //gadavides isev contactze
                 exit();
             }
